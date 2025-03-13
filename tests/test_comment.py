@@ -144,7 +144,7 @@ class TestCommentAPI:
             f'авторизованного пользователя к `{self.comments_url}` возвращает '
             'ответ со статусом 201.'
         )
-        data = {'text': self.TEXT_FOR_COMMENT, 'post': post.id,}
+        data = {'text': self.TEXT_FOR_COMMENT}
         try:
             response = user_client.post(
                 self.comments_url.format(post_id=post.id),

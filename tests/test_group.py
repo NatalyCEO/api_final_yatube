@@ -3,7 +3,6 @@ from http import HTTPStatus
 import pytest
 
 from posts.models import Group
-from rest_framework.response import Response
 
 
 @pytest.mark.django_db(transaction=True)
